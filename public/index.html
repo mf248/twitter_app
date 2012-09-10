@@ -27,7 +27,7 @@
 
 
       #page {
-        background-color: #f0f0f0;
+        background-color: teal;
         width: 750px;
         margin: 0;
         margin-left: auto;
@@ -40,7 +40,7 @@
         border: 3px solid #aaa;
         border-top: none;
         padding: 25px;
-        width: 500px;
+        width: 750px;
       }
 
       #sidebar {
@@ -170,6 +170,20 @@
       .filename {
         font-style: italic;
       }
+
+      .leftBar {
+        float:left;
+        width:15%;
+        background-color: teal;
+      }
+
+      .rightBar {
+        float:right;
+        width:15%;
+        background-color: teal;
+      }
+
+
     </style>
     <script type="text/javascript">
       function about() {
@@ -186,7 +200,9 @@
     </script>
   </head>
   <body>
-    <div id="page">
+    <div id="page" background-color="teal">
+      <div class="rightBar"> </div>
+      <div class-"leftBar"> </div>
       <div id="sidebar">
         <ul id="sidebar-items">
           <li>
