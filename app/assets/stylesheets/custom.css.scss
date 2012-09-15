@@ -2,6 +2,8 @@
 
 /* universal */
 
+$lightGray: #999;
+
 html {
   overflow-y: scroll;
 }
@@ -20,11 +22,11 @@ textarea {
 
 .center {
   text-align: center;
+  h1 {
+  	margin-bottom: 10px;
+  }
 }
 
-.center h1 {
-  margin-bottom: 10px;
-}
 
 /* header */
 
@@ -38,12 +40,12 @@ textarea {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  &:hover {
+  	color: #fff;
+  	text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
 
 /* typography */
 
@@ -64,7 +66,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: $lightGray;
 }
 
 p {
@@ -78,27 +80,23 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #999;
-}
-
-footer a {
-  color: #555;
+  color: $lightGray;
+  a {
+  	color: #555;
+  	&:hover {
+  		color: #222
+  	}
+  }
+  small {
+  	float: left;
+  }
+  ul {
+  	float: right;
+  	list-style: none;
+  	li {
+  		float: left;
+  		margin-left: 10px;
+  	}
+  }
 }  
 
-footer a:hover { 
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 10px;
-}
