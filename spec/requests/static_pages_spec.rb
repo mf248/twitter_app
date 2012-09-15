@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-<<<<<<< HEAD
+
 
 describe "Static pages" do
 
@@ -33,7 +33,7 @@ describe "Static pages" do
 
     it { should have_selector('h1',    text: 'Contact') }
     it { should have_selector('title', text: full_title('Contact')) }
-=======
+
 describe "Static pages" do
 
   describe "Home page" do
@@ -76,6 +76,5 @@ describe "Static pages" do
       page.should have_selector('title',
                     :text => "Ruby on Rails Tutorial Sample App | About Us")
     end
->>>>>>> static-pages
   end
 end
